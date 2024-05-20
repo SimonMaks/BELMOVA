@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            } 
+
+            .backgroundImage {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                background-image: url(../../1613363389_78-p-bezhevii-fon-dlya-istorii-105.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            .rootContainer {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dataContainer {
+                width: 600px;
+                min-height: 500px;
+                background-color: white;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .textContainer {
+                width: 70%;
+                background-color: transparent;
+                margin-top: 100px;
+                text-align: center;
+            }
+
+            .textStyle {
+                font-size: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .checkButton {
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                border: solid 1px black;
+                margin-top: 60px;
+            }
+
+            .goBackLink {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="backgroundImage"></div>
+        <div class="rootContainer">
+            <div class="dataContainer">
+                <div class="textContainer">
+                    <p id="textData" class="textStyle">Як называецца выраб з дрэва, які раней выкарыстоўвалі ў якасці вулляў для пчол? Таксама ж _____ не пустыя: Раі ўздужалі маладыя.
+                        
+
+
+                    </p>
+                </div>
+                <button onclick="getAnswer()" class="checkButton">Праверыць</button>
+                <a href="../card.html" class="goBackLink">Вярнуцца</a>
+            </div>
+        </div>
+
+        <script>
+            const textData = document.getElementById("textData");
+            function getAnswer() {
+                textData.textContent = "Як называецца выраб з дрэва, які раней выкарыстоўвалі ў якасці вулляў для пчол? Таксама ж БОРЦІ не пустыя: Раі ўздужалі маладыя.";
+            }
+        </script>
+    </body>
+</html>

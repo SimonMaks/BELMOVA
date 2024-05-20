@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../SFind/style.css">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .backgroundImage {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                background-image: url(../1613363389_78-p-bezhevii-fon-dlya-istorii-105.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            @media screen and (min-width: 666px){    
+                .rootContainer {
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }            
+            }
+
+            @media screen and (max-width: 666px){    
+                .rootContainer {
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                }            
+            }
+
+            .cardsContainer {
+                width: 100%;
+                min-height: 50%;
+                background-color: transparent;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .card {
+                flex: 0 1 200px; 
+                height: 160px;
+                background-image: url(../1674559749_catherineasquithgallery-com-p-fon-ramka-korichnevaya-84.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-color: wheat;
+                border: black 1px solid;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .card:visited {
+                flex: 0 1 200px; 
+                height: 160px;
+                background-image: url(../1674559749_catherineasquithgallery-com-p-fon-ramka-korichnevaya-84.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-color: rgb(214, 214, 214);
+                border: black 1px solid;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .cardText {
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                color: rgb(70, 12, 82);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="backgroundImage"></div>
+        <div class="rootContainer">
+            <div class="cardsContainer">
+                <a href="../SFind/cards/card1.html" class="card">
+                    <p class="cardText">1</p>
+                </a>
+                <a href="../SFind/cards/card2.html" class="card">
+                    <p class="cardText">2</p>
+                </a>
+                <a href="../SFind/cards/card3.html" class="card">
+                    <p class="cardText">3</p>
+                </a>
+                <a href="../SFind/cards/card4.html" class="card">
+                    <p class="cardText">4</p>
+                </a>
+                <a href="../SFind/cards/card5.html" class="card">
+                    <p class="cardText">5</p>
+                </a>
+                <a href="../SFind/cards/card6.html" class="card">
+                    <p class="cardText">6</p>
+                </a>
+                <a href="../SFind/cards/card7.html" class="card">
+                    <p class="cardText">7</p>
+                </a>
+                <a href="../SFind/cards/card8.html" class="card">
+                    <p class="cardText">8</p>
+                </a>
+                <a href="../SFind/cards/card9.html" class="card">
+                    <p class="cardText">9</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="../SFind/logic.js"></script>
+    </body>
+</html>

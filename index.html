@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../SFind/style.css">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            .rootContainer {
+                width: 100vw;
+                height: 100vh;
+                background-color: #aeaeae;
+                background-image: url("../1613504107_62-p-fon-dlya-prezentatsii-po-nemetskomu-yaziku-74.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .textContainer {
+                width: 800px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: column;
+            }
+            .textHeaderMainCotnainer {
+                max-width: 800px;
+                padding-top: 20px;
+            }
+
+            @media screen and (min-width: 700px) {
+                .textHeaderMain {
+                    font-size: 40px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .textHeaderSecond {
+                    font-size: 30px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-align: center;
+                }
+            }
+
+            @media screen and (min-width: 500px) and (max-width: 700px) {
+                .textHeaderMain {
+                    font-size: 30px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .textHeaderSecond {
+                    font-size: 20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-align: center;
+                }
+            }
+        
+            @media screen and (min-width: 300px) and (max-width: 500px) {
+                .textHeaderMain {
+                    font-size: 25px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .textHeaderSecond {
+                    font-size: 18px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-align: center;
+                }
+            }
+
+            @media screen and (max-width: 300px) {
+                .textHeaderMain {
+                    font-size: 20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .textHeaderSecond {
+                    font-size: 15px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-align: center;
+                }
+            }
+
+            .textHeaderSecondCotnainer {
+                max-width: 500px;
+                padding-top: 40px;
+            }
+
+            .linkToCards {
+                font-size: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                text-decoration: none;
+                color: rgb(130, 17, 153);
+            }
+
+            .cardsContainer {
+                width: 700px;
+                min-height: 480px;
+                background-color: transparent;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .card {
+                flex: 0 1 200px; 
+                height: 160px;
+                background-color: antiquewhite;
+                border: black 1px solid;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rootContainer">
+            <div class="textContainer">
+                <div class="textHeaderMainCotnainer">
+                    <p id="textTopHeader" class="textHeaderMain">Фрагмент бінарнага майстар-класа па 
+                        беларускай літаратуры і хіміі “У суладдзі з прыродай: 
+                        літаратура вучыць”</p>
+                </div>
+                <div class="textHeaderSecondCotnainer">
+                    <p id="textBottomHeader" class="textHeaderSecond">Літаратурнае лато па паэме Якуба Коласа 
+                        “Новая зямля” 
+                    </p>
+                </div>
+                <a href="..//SFind/card.html" class="linkToCards">Перейти к вопросам</a>
+            </div>
+        </div>   
+
+        <script src="../SFind/logic.js"></script>
+    </body>
+</html>
