@@ -58,6 +58,17 @@
             }
 
             .goBackLink {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            }
+
+            .imageContainer {
+                display: none;
+                width: 300px;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
                 margin-top: 20px;
             }
         </style>
@@ -71,15 +82,22 @@
 
                     </p>
                 </div>
-                <button onclick="getAnswer()" class="checkButton">Праверыць</button>
+                <div id="imgCon" class="imageContainer"></div>
+                <button id="button" onclick="getAnswer()" class="checkButton">Праверыць</button>
                 <a href="card.html" class="goBackLink">Вярнуцца</a>
             </div>
         </div>
 
         <script>
             const textData = document.getElementById("textData");
+            const imageContainer = document.getElementById("imgCon");
+            const button = document.getElementById("button");
+
             function getAnswer() {
                 textData.textContent = "Як называлі нашы продкі абрадавую страву, якую абавязкова гатавалі на Каляды? Снег на КУЦЦЮ ‒ грыбы на лета, такая матчына прымета.";
+                button.style.marginTop = "10px";
+                imageContainer.style.display = "flex";
+                imageContainer.style.backgroundImage = "url('2a.png')";
             }
         </script>
     </body>
