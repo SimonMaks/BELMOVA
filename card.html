@@ -87,37 +87,54 @@
         </style>
     </head>
     <body>
-        <div class="backgroundImage"></div>
-        <div class="rootContainer">
-            <div class="cardsContainer">
-                <a href="card1.html" class="card">
-                    <p class="cardText">1</p>
-                </a>
-                <a href="card2.html" class="card">
-                    <p class="cardText">2</p>
-                </a>
-                <a href="card3.html" class="card">
-                    <p class="cardText">3</p>
-                </a>
-                <a href="card4.html" class="card">
-                    <p class="cardText">4</p>
-                </a>
-                <a href="card5.html" class="card">
-                    <p class="cardText">5</p>
-                </a>
-                <a href="card6.html" class="card">
-                    <p class="cardText">6</p>
-                </a>
-                <a href="card7.html" class="card">
-                    <p class="cardText">7</p>
-                </a>
-                <a href="card8.html" class="card">
-                    <p class="cardText">8</p>
-                </a>
-                <a href="card9.html" class="card">
-                    <p class="cardText">9</p>
-                </a>
-            </div>
+    <div class="backgroundImage"></div>
+    <div class="rootContainer">
+        <div class="cardsContainer">
+            <a id="card1" href="card1.html" class="card" style="background-image: url(../1.png);">
+            </a>
+            <a id="card2" href="card2.html" class="card" style="background-image: url(../2.png);">
+            </a>
+            <a id="card3" href="card3.html" class="card" style="background-image: url(../3.png);">
+            </a>
+            <a id="card4" href="card4.html" class="card" style="background-image: url(../4.png);">
+            </a>
+            <a id="card5" href="card5.html" class="card" style="background-image: url(../5.png);">
+            </a>
+            <a id="card6" href="card6.html" class="card" style="background-image: url(../6.png);">
+            </a>
+            <a id="card7" href="card7.html" class="card" style="background-image: url(../7.png);">
+            </a>
+            <a id="card8" href="card8.html" class="card" style="background-image: url(../8.png);">
+            </a>
+            <a id="card9" href="card9.html" class="card" style="background-image: url(../9.png);">
+            </a>
         </div>
-    </body>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = [
+                { id: "card1", newBg: "../1a.png" },
+                { id: "card2", newBg: "../2a.png" },
+                { id: "card3", newBg: "../3a.png" },
+                { id: "card4", newBg: "../4a.png" },
+                { id: "card5", newBg: "../5a.png" },
+                { id: "card6", newBg: "../6a.png" },
+                { id: "card7", newBg: "../7a.png" },
+                { id: "card8", newBg: "../8a.png" },
+                { id: "card9", newBg: "../9a.png" },
+            ];
+
+            cards.forEach(card => {
+                if (localStorage.getItem(card.id) === "visited") {
+                    document.getElementById(card.id).style.backgroundImage = `url(${card.newBg})`;
+                }
+
+                document.getElementById(card.id).addEventListener("click", function() {
+                    localStorage.setItem(card.id, "visited");
+                });
+            });
+        });
+    </script>
+</body>
 </html>
