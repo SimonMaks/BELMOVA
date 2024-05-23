@@ -77,17 +77,14 @@
     <div class="rootContainer">
         <div class="dataContainer">
             <div class="textContainer">
-                <p id="textData" class="textStyle">Прынеслі ночвы ______ ў хату.
-                    На долю выпала Кандрату
-                    Дзяліць ______ гэты між кумамі,
-                    Жанкі ідуць сюды з збанамі.
-                    Тут смех і жарты, таўканіна,-
-                    Найцікавейшая часіна!
-                </p>
+                <p id="textData" class="textStyle">Якое свята прыпадае на сярэдзіну жніўня, калі соты напаўняюцца мёдам? Калі адзначаецца? Глядзім на малюнак. Тым часам __________ мінуўся,
+                    І лес у чырвань апрануўся. ________
+                    
+
             </div>
             <div id="imgCon" class="imageContainer"></div>
             <button id="button" onclick="getAnswer()" class="checkButton">Праверыць</button>
-            <a href="card.html" class="goBackLink">Вярнуцца</a>
+            <a href="../card.html" class="goBackLink">Вярнуцца</a>
         </div>
     </div>
 
@@ -97,10 +94,10 @@
         const button = document.getElementById("button");
 
         function getAnswer() {
-            textData.textContent = "Прынеслі ночвы МЁДУ ў хату. На долю выпала Кандрату Дзяліць МЁД гэты між кумамі, Жанкі ідуць сюды з збанамі. Тут смех і жарты, таўканіна,- Найцікавейшая часіна!";
+            textData.textContent = "Якое свята прыпадае на сярэдзіну жніўня, калі соты напаўняюцца мёдам? Калі адзначаецца? Глядзім на малюнак. Тым часам СПАС СВЯТЫ мінуўся, І лес у чырвань апрануўся. МЯДОВЫ СПАС 14 ЖНІЎНЯ";
             button.style.marginTop = "10px";
             imageContainer.style.display = "flex";
-            imageContainer.style.backgroundImage = "url('1a.png')";
+            imageContainer.style.backgroundImage = "url('9a.png')";
         }
     </script>
 </body>
