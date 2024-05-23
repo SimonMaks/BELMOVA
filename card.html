@@ -84,6 +84,25 @@
                 font-weight: bold;
                 color: rgb(70, 12, 82);
             }
+
+            .blackBoxLinkContainer {
+                min-width: 150px;
+                max-width: 150px;
+                min-height: 40px;
+                max-height: 40px;
+                background-color: bisque;
+                border: solid 1px black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 20px;
+            }
+
+            .blackBoxLink {
+                text-decoration: none;      
+                color: black;
+            }
         </style>
     </head>
     <body>
@@ -109,20 +128,23 @@
             <a id="card9" href="card9.html" class="card" style="background-image: url(9.png);">
             </a>
         </div>
+        <div class="blackBoxLinkContainer">
+            <a href="blackBox.html" class="blackBoxLink">Чорная скрыня</a>
+        </div>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const cards = [
-                { id: "card1", newBg: "1a.png" },
-                { id: "card2", newBg: "2a.png" },
-                { id: "card3", newBg: "3a.png" },
-                { id: "card4", newBg: "4a.png" },
-                { id: "card5", newBg: "5a.png" },
-                { id: "card6", newBg: "6a.png" },
-                { id: "card7", newBg: "7a.png" },
-                { id: "card8", newBg: "8a.png" },
-                { id: "card9", newBg: "9a.png" },
+                { id: "card1", newBg: "9a.png" },
+                { id: "card2", newBg: "1a.png" },
+                { id: "card3", newBg: "2a.png" },
+                { id: "card4", newBg: "3a.png" },
+                { id: "card5", newBg: "4a.png" },
+                { id: "card6", newBg: "5a.png" },
+                { id: "card7", newBg: "6a.png" },
+                { id: "card8", newBg: "7a.png" },
+                { id: "card9", newBg: "8a.png" },
             ];
 
             cards.forEach(card => {
