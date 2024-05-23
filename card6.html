@@ -58,8 +58,19 @@
             }
 
             .goBackLink {
-                margin-top: 20px;
-            }
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .imageContainer {
+            display: none;
+            width: 300px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin-top: 20px;
+        }
         </style>
     </head>
     <body>
@@ -75,15 +86,22 @@
 
                     </p>
                 </div>
-                <button onclick="getAnswer()" class="checkButton">Праверыць</button>
-                <a href="card.html" class="goBackLink">Вярнуцца</a>
+                <div id="imgCon" class="imageContainer"></div>
+            <button id="button" onclick="getAnswer()" class="checkButton">Праверыць</button>
+            <a href="card.html" class="goBackLink">Вярнуцца</a>
             </div>
         </div>
 
         <script>
             const textData = document.getElementById("textData");
+            const imageContainer = document.getElementById("imgCon");
+        const button = document.getElementById("button");
+
             function getAnswer() {
                 textData.textContent = "Традыцыі гэтага свята патрабуюць, каб на стале былі асаблівыя стравы. Яны паказаны на малюнку. Як называюцца стравы і свята? А КУЛІЧЫ як сонца, ззялі, І ў роце бабкі раставалі. ВЯЛІКДЗЕНЬ";
+                button.style.marginTop = "10px";
+                imageContainer.style.display = "flex";
+                imageContainer.style.backgroundImage = "url('5a.png')";
             }
         </script>
     </body>
